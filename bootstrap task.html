@@ -1,38 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
-   <div class="row">
-    <div class="col-6">
-<h1>Heading 1</h1>
-<img class="w-100" src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=food-dinner-lunch-461198.jpg&fm=jpg" alt="no image">
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum asperiores inventore excepturi repellat! Veritatis laudantium quos quasi quae beatae assumenda natus, architecto modi dolores voluptatum! Iusto nobis vitae corrupti nemo?</p>
-    </div>
-        <div class="col-6">
-            <h1>Heading 2</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat hic molestias necessitatibus at voluptate, repudiandae dolores dolorem quia illo omnis sit ea? Cum inventore error totam? Aliquid quae voluptatibus eveniet!</p>
-            <hr>
-             <div class="row">
-        <!-- Sub Heading 1 -->
-        <div class="col-6">
-            <h2>Sub Heading 1</h2>
-            <img class="w-100" src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=food-dinner-lunch-461198.jpg&fm=jpg" alt="no image">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum asperiores inventore excepturi repellat! Veritatis laudantium quos quasi quae beatae assumenda natus, architecto modi dolores voluptatum! Iusto nobis vitae corrupti nemo?</p>
-        </div>   
-        <!-- sub heading 2 -->
-            <div class="col-6">
-        <img class="w-100" src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=food-dinner-lunch-461198.jpg&fm=jpg" alt="no image">
-        <h2>Sub Heading 2</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum asperiores inventore excepturi repellat! Veritatis laudantium quos quasi quae beatae assumenda natus, architecto modi dolores voluptatum! Iusto nobis vitae corrupti nemo?</p>
-           </div>
-        </div> 
-        </div>
-   </div>    
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <i class="fs-1 fa-brands fa-bootstrap"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- carousl -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-social.png" class="d-block w-50" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img
+          src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/197744829/original/5482b43f8241c7f1e29a026eadea8b72475ec54c/convert-psd-to-html-responsive-bootstrap-4.png"
+          class="d-block w-50" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://th.bing.com/th/id/OIP.-l3O5xHzU0FPTSsTFZe2zQHaE8?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+          class="d-block w-50" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- cards -->
+ <div class="container-fluid my-5">
+    <div class="row ">
+
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top"
+            src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=food-dinner-lunch-461198.jpg&fm=jpg"
+            alt="no image">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+              content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top"
+            src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=food-dinner-lunch-461198.jpg&fm=jpg"
+            alt="no image">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+              content.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top"
+            src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=food-dinner-lunch-461198.jpg&fm=jpg"
+            alt="no image">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+              content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 ">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top"
+            src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=food-dinner-lunch-461198.jpg&fm=jpg"
+            alt="no image">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+              content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="bg-dark text-light text-center">
+    &copy by luminar technolab &reg All rights reserverd
+  </footer>
+
+
+
+
+
+  <!--grid  -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Heading 1</h1>
+        <img class="w-100"
+          src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=food-dinner-lunch-461198.jpg&fm=jpg"
+          alt="no image">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum asperiores inventore excepturi repellat!
+          Veritatis laudantium quos quasi quae beatae assumenda natus, architecto modi dolores voluptatum! Iusto nobis
+          vitae corrupti nemo?</p>
+      </div>
+      <div class="col-md-6">
+        <h1>Heading 2</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat hic molestias necessitatibus at voluptate,
+          repudiandae dolores dolorem quia illo omnis sit ea? Cum inventore error totam? Aliquid quae voluptatibus
+          eveniet!</p>
+        <hr>
+        <div class="row">
+          <!-- Sub Heading 1 -->
+          <div class="col-md-6">
+            <h2>Sub Heading 1</h2>
+            <img class="w-100"
+              src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=food-dinner-lunch-461198.jpg&fm=jpg"
+              alt="no image">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum asperiores inventore excepturi repellat!
+              Veritatis laudantium quos quasi quae beatae assumenda natus, architecto modi dolores voluptatum! Iusto
+              nobis vitae corrupti nemo?</p>
+          </div>
+          <!-- sub heading 2 -->
+          <div class="col-md-6">
+            <img class="w-100"
+              src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=food-dinner-lunch-461198.jpg&fm=jpg"
+              alt="no image">
+            <h2>Sub Heading 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum asperiores inventore excepturi repellat!
+              Veritatis laudantium quos quasi quae beatae assumenda natus, architecto modi dolores voluptatum! Iusto
+              nobis vitae corrupti nemo?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </html>
